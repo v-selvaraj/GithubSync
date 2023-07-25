@@ -30,6 +30,7 @@ async function main() {
       env.log_level = 100;
       env.ado_assigned = "v-selvarajd@microsoft.com";
       env.ado_bug_issue_type="Other Issue";
+      env.ado_How_Found_="Feedback"
 
       console.log("Set values from test payload");
       vm = getValuesFromPayload(testPayload, env);
@@ -182,6 +183,11 @@ async function create(vm) {
       op: "add",
       path: "/fields/Custom.BugIssueType",
       value: "Other Issue"
+    },
+	   {
+      op: "add",
+      path: "/fields/Custom.HowFound_",
+      value: "Feedback"
     },
     {
       op: "add",
