@@ -28,6 +28,7 @@ async function main() {
       env.ado_active_state = "Active";
       env.ado_new_state = "New";
       env.log_level = 100;
+      env.ado_assigned = "v-selvarajd@microsoft.com";
 
       console.log("Set values from test payload");
       vm = getValuesFromPayload(testPayload, env);
@@ -110,6 +111,7 @@ async function main() {
         workItem != null ? await reopened(vm, workItem) : "";
         break;
       case "assigned":
+ 	workItem != null ? await label(vm, workItem) : "";
         console.log("assigned action is not yet implemented");
         break;
       case "labeled":
@@ -169,6 +171,11 @@ async function create(vm) {
       op: "add",
       path: "/fields/System.Tags",
       value: "GitHub Issue; " + vm.repo_name
+    },
+	   {
+      op: "add",
+      path: "/fields/System.AssignedTo",
+      value: "v-selvarajd@microsoft.com"
     },
     {
       op: "add",
