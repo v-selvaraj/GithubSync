@@ -179,7 +179,7 @@ async function create(vm) {
     },
 	     {
       op: "add",
-      path: "/fields/System.Bug Issue Type",
+      path: "/fields/Microsoft.VSTS.TCM.Bug Issue Type",
       value: "Other Issue"
     },
     {
