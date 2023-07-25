@@ -180,7 +180,7 @@ async function create(vm) {
     },
 	     {
       op: "add",
-      path: "/fields/System.BugIssueType",
+      path: "/fields/Custom.BugIssueType",
       value: "Other Issue"
     },
     {
