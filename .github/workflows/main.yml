@@ -26,4 +26,4 @@ jobs:
           "assignedTo": "v-selvaraj@microsoft.com"
           log_level: 100
           ado_priority: 3
-          areaPath: "Test2 AreaName"
+          areaPath: "Test2/AreaName2"
