@@ -172,7 +172,7 @@ async function create(vm) {
     {
       op: "add",
       path: "/fields/System.Tags",
-      value: "GitHub Issue; " + vm.repo_name
+      value: "WAI Online"
     },
 	   {
       op: "add",
@@ -212,6 +212,12 @@ async function create(vm) {
       path: "/fields/Microsoft.VSTS.Common.BacklogPriority",
       value: 1
     } 
+	   {
+      op: "add",
+      path: "/fields/Microsoft.VSTS.Common.Priority",
+      value: 3
+    } 
+	  
   ];
 
   // if area path is not empty, set it
