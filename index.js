@@ -31,7 +31,7 @@ async function main() {
       env.ado_assigned = "v-selvarajd@microsoft.com";
       env.ado_bug_issue_type="Other Issue";
       env.ado_How_Found_="Feedback"
-      env.ado_AreaPath="Test2\Area name"
+      env.ado_areapath="Test2\Area name"
 
       console.log("Set values from test payload");
       vm = getValuesFromPayload(testPayload, env);
@@ -226,7 +226,7 @@ async function create(vm) {
     patchDocument.push({
       op: "add",
       path: "/fields/System.AreaPath",
-      value: "Test2\Area name"
+      value: "Test2AreaName"
     });
   }
 
