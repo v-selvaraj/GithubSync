@@ -31,7 +31,7 @@ async function main() {
       env.ado_assigned = "v-selvarajd@microsoft.com";
       env.ado_bug_issue_type="Other Issue";
       env.ado_How_Found_="Feedback"
-      env.ado_areapath="Test2\Area name"
+      env.ado_areapath="Test2\AreaName2"
 
       console.log("Set values from test payload");
       vm = getValuesFromPayload(testPayload, env);
