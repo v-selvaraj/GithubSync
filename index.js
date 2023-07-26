@@ -226,7 +226,7 @@ async function create(vm) {
     patchDocument.push({
       op: "add",
       path: "/fields/System.AreaPath",
-      value: "Test2AreaName"
+      value:  env.ado_area_path 
     });
   }
 
