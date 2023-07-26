@@ -219,7 +219,7 @@ async function create(vm) {
     patchDocument.push({
       op: "add",
       path: "/fields/System.AreaPath",
-      value: vm.env.areaPath
+      value: "Solutions\Industry WAI"
     });
   }
 
